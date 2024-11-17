@@ -1,0 +1,31 @@
+@media (max-width: 1040px) {
+    header .formSearch {
+        display: none;
+    }
+}
+
+@media (max-width: 790px) {
+    header {
+        flex-direction: column;
+        height: 15vh;
+        padding: 15px 0;
+    }
+
+    header nav ul {
+        width: 40vh;
+    }
+}
+
+@media (max-width: 393px) and (min-width: 340px) {
+    header {
+        height: 21vh;
+    }
+    header nav ul {
+        scale: 0.9;
+        width: 50vh;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+}

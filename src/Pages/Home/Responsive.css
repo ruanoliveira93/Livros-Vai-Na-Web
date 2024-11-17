@@ -1,0 +1,227 @@
+@media (max-width: 1834px) and (min-width: 1080px) {
+    main .secaoHome h2 {
+        width: 600px;
+        scale: 0.8;
+        left: 1%;
+        top: 45%;
+      }
+
+      main .secaoHome img {
+        height: 90vh;
+      }
+}
+
+@media (max-width: 1079px) and (min-width: 789px) {
+    main .secaoHome h2 {
+      top: 40%;
+      scale: 0.8;
+      width: 600px;
+      left: 2%;
+    }
+    
+    main .secaoHome img {
+      height: 80vh;
+    }
+}
+
+@media (max-width: 789px) and (min-width: 528px) {
+    main .secaoHome h2 {
+      top: 35%;
+      scale: 0.7;
+      width: 500px;
+      left: -1%;
+
+    }
+
+    main .secaoHome img {
+      height: 60vh;
+    }
+}
+
+@media (max-width: 527px) {
+  main .secaoHome h2 {
+    scale: 0.5;
+    width: 500px;
+    top: 24%;
+    left: -15%;
+  }
+  main .secaoHome img {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 393px) {
+  main .secaoHome h2 {
+    scale: 0.4;
+    width: 500px;
+    top: 22%;
+    left: -30%;
+  }
+  main .secaoHome img {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 1835px) {
+  main {
+    height: 210vh;
+  }
+  main .insentivoEducacao h2 {
+    top: 110%;
+  }
+
+  main .insentivoEducacao .destaque {
+    top: 125%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 80px;
+  }
+}
+
+@media (max-width: 1335px) {
+  main {
+    height: 210vh;
+  }
+  main .insentivoEducacao h2 {
+    top: 110%;
+  }
+
+  main .insentivoEducacao .destaque {
+    top: 125%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+  }
+}
+
+@media (max-width: 835px) {
+  main {
+    height: 210vh;
+  }
+  main .insentivoEducacao h2 {
+    top: 100%;
+    left: 30%;
+  }
+
+  main .insentivoEducacao .destaque {
+    top: 120%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 200px;
+    left: 2%;
+    scale: 0.8;
+  }
+}
+
+@media (max-width: 735px) {
+  main {
+    height: 180vh;
+  }
+  main .insentivoEducacao {
+    height: 163vh;
+  }
+  main .insentivoEducacao h2 {
+    top: 85%;
+    left: 30%;
+  }
+
+  main .insentivoEducacao .destaque {
+    top: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 200px;
+    left: -4%;
+    scale: 0.8;
+  }
+}
+
+@media (max-width: 693px) {
+  main {
+    height: 240vh;
+  }
+  main .insentivoEducacao {
+    height: 163vh;
+  }
+  main .insentivoEducacao h2 {
+    top: 60%;
+    left: 15%;
+  }
+
+  main .insentivoEducacao .destaque {
+    top: 65%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 100px;
+    left: 16%;
+    scale: 0.9;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    height: 225vh;
+  }
+  main .insentivoEducacao {
+    height: 163vh;
+  }
+  main .insentivoEducacao h2 {
+    top: 58%;
+    left: 22%;
+    font-size: 33px;
+  }
+
+  main .insentivoEducacao .destaque {
+    top: 60%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 100px;
+    left: 18%;
+    scale: 0.9;
+  }
+}
+
+@media (max-width: 432px) {
+  main {
+    height: 225vh;
+  }
+  main .insentivoEducacao {
+    height: 163vh;
+  }
+  main .insentivoEducacao h2 {
+    top: 60%;
+    left: 18%;
+    font-size: 33px;
+  }
+
+  main .insentivoEducacao .destaque {
+    top: 65%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 100px;
+    left: 14%;
+    scale: 0.9;
+  }
+}
+
+@media (max-width: 405px) {
+  main {
+    height: 240vh;
+  }
+  main .insentivoEducacao {
+    min-height: 163vh;
+  }
+  main .insentivoEducacao h2 {
+    top: 60%;
+    left: 20%;
+    font-size: 28px;
+  }
+
+  main .insentivoEducacao .destaque {
+    top: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 100px;
+    left: 10%;
+    scale: 0.8;
+  }
+}

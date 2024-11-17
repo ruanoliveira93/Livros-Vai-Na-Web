@@ -1,0 +1,14 @@
+@media (max-width: 432px) {
+    footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    footer .telefone-contato {
+        margin: 0 auto;
+    }
+
+    footer .redes-sociais {
+        margin: 0 auto;
+    }
+}
