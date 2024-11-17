@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import Home from '../../Pages/Home/Home'
 import LivrosDoados from '../../Pages/LivrosDoados/LivrosDoados'
-import QueroDoar from '../../Pages/QueroDoar/queroDoar'
+import QueroDoar from '../../Pages/QueroDoar/QueroDoar'
 import logoLivro from '../../assets/Logo Livro.png'
 import lupaPesquisa from '../../assets/search.png'
 import './Header.css'
