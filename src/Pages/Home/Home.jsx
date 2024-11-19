@@ -3,21 +3,20 @@ import rede from '../../assets/Insentivo.png'
 import leitura from '../../assets/Leitura.png'
 import dedicacao from '../../assets/Dedicação.png'
 import balanca from '../../assets/Balança.png'
-import './Home.css'
-import './Responsive.css'
+import s from './home.module.scss'
 
 export default function Home() {
     return (
         <main>
-            <section className='secaoHome'>
+            <section className={s.secaoHome}>
                 <img src={garotoComLivros} alt="Imagem do pescoço pra baixo de um garoto segurando livros" />
                 <h2>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</h2>
             </section>
 
-            <section className='insentivoEducacao'>
+            <section className={s.insentivoEducacao}>
                 <h2>Por que devo doar?</h2>
 
-                <section className='destaque'>
+                <section className={s.destaque}>
                     <div>
                         <img src={rede} alt="" />
                         <p>Oferece livros a quem não tem acesso, ajudando a reduzir a exclusão social.</p>

@@ -4,31 +4,30 @@ import LivrosDoados from '../../Pages/LivrosDoados/LivrosDoados'
 import QueroDoar from '../../Pages/QueroDoar/QueroDoar'
 import logoLivro from '../../assets/Logo Livro.png'
 import lupaPesquisa from '../../assets/search.png'
-import './Header.css'
-import './Responsive.css'
+import s from './header.module.scss'
 
 
 export default function Header() {
     return (
         <BrowserRouter>
             <header>
-                <section>
+                <section className={s.logoHeader}>
                     <Link to='/'>
                         <img src={logoLivro} alt="Imagem ilustrativa de um livro aberto" />
                         <h1>Livros Vai na Web</h1>
                     </Link>
                 </section>
 
-                <nav>
+                <nav className={s.navbar}>
                     <ul>
                         <li><Link to='/'>Início</Link></li>
-                        <li><Link to='/livros-doados'>Livros Doados</Link></li>
-                        <li><Link to='/quero-doar'>Quero Doar</Link></li>
+                        <li><Link to='/livrosdoados'>Livros Doados</Link></li>
+                        <li><Link to='/querodoar'>Quero Doar</Link></li>
                     </ul>
                 </nav>
 
-                <section className='formSearch'>
-                    <input type="search" name="" id="" placeholder='O que você procura?' />
+                <section className={s.formSearch}>
+                    <input type="search" placeholder='O que você procura?' />
                     
                     <button>
                     <img src={lupaPesquisa} alt="Imagem Lupa" />
@@ -38,8 +37,8 @@ export default function Header() {
 
             <Routes>
                 <Route index element={<Home/>}/>
-                <Route path='/livros-doados' element={<LivrosDoados/>} />
-                <Route path='/quero-doar' element={<QueroDoar/>}/>
+                <Route path='/livrosdoados' element={<LivrosDoados/>} />
+                <Route path='/querodoar' element={<QueroDoar/>}/>
             </Routes>
         </BrowserRouter>
     )

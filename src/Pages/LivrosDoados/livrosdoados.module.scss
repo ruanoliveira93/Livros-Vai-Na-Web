@@ -1,0 +1,88 @@
+.containerLivros {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    height: 100vh;
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .livros {
+        display: flex;
+        justify-content: space-between;
+        align-items: first baseline;
+        width: 80%;
+        height: 90vh;
+        padding-top: 50px;
+
+        .livro {
+            border: 3px solid #005695;
+            width: 245px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 16px;
+            height: 250px;
+
+            img {
+                width: 120px;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+// Media Query Livros Doados
+@media (max-width: 808px) {
+    .containerLivros {
+        
+        .livros {
+            justify-content: center;
+
+            .livro {
+                scale: 1.3;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .containerLivros {
+        
+        h2 {
+            font-size: 35px;
+        }
+
+        .livros .livro {
+            scale: 1.1;
+        }
+    }
+}
+
+@media (max-width: 393px) {
+    .containerLivros {
+        justify-content: center;
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .livros {
+            padding-top: 20px;
+        }
+
+        .livros .livro {
+            scale: 0.9;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #005695;
+    width: 100%;
+    height: 120px;
+
+    .telefoneContato {
+      margin-left: 50px;
+
+      p {
+        font-size: 22px;
+        font-weight: 500px;
+        color: white;
+      }
+    }
+
+    .redesSociais {
+        margin-right: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        a i {
+            font-size: 35px;
+            color: white;
+          }
+      }
+}
+
+//   Media Query Footer
+@media (max-width: 432px) {
+    footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        .telefoneContato {
+            margin: 0 auto;
+        }
+        
+        .redesSociais {
+            margin: 0 auto;
+        }
+    }
+}

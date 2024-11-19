@@ -1,12 +1,11 @@
-import './QueroDoar.css'
-import './Responsive.css'
+import s from './querodoar.module.scss'
 import frameLivro from '../../assets/Frame.png'
 
 export default function queroDoar() {
     return (
-        <main className="queroDoar">
+        <main className={s.queroDoar}>
             <p>Por favor, preencha o formulário com suas informações e as informações do Livro</p>
-            <section className="formulario">
+            <section className={s.formulario}>
                 <div>
                     <img src={frameLivro} alt="" />
                     <legend>
