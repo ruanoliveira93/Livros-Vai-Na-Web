@@ -51,7 +51,7 @@
             align-items: center;
             flex-direction: column;
             width: 325px;
-            height: 340px;
+            height: 400px;
 
             input {
                 border: 2px solid #005695;
@@ -63,7 +63,7 @@
                 font-size: 16px;
             }
 
-            #btn {
+            input[type='submit'] {
                 background: #005695;
                 color: white;
                 font-size: 18px;
@@ -72,6 +72,13 @@
                 height: 53px;
                 text-align: center;
                 text-indent: 0;
+                margin-top: 20px;
+                cursor: pointer;
+
+                &:hover {
+                    background: rgb(0, 86, 149, 0.8);
+                    border: rgb(0, 86, 149, 0.9);
+                }
             }
         }
     }

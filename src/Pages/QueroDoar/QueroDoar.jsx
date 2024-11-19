@@ -18,7 +18,7 @@ export default function queroDoar() {
                     <input type="text" name="categoria" id="categoria" placeholder="Categoria" />
                     <input type="text" name="autor" id="autor" placeholder="Autor" />
                     <input type="url" name="linkImagem" id="linkImagem" placeholder="Link da Imagem" />
-                    <input type="submit" id="btn" value="Doar" />
+                    <input type="submit" value="Doar" />
                 </form>
 
             </section>
