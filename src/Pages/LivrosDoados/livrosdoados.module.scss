@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     padding-top: 50px;
-    height: 100vh;
+    min-height: 100vh;
 
     h2 {
         font-size: 40px;
@@ -43,10 +43,10 @@
 }
 
 // Media Query Livros Doados
-@media (max-width: 808px) {
+@media (max-width: 808px) and (min-width: 481px) {
     .containerLivros {
-        
         .livros {
+            padding-top: 80px;
             justify-content: center;
 
             .livro {
@@ -58,20 +58,22 @@
 
 @media (max-width: 480px) {
     .containerLivros {
-        
         h2 {
             font-size: 35px;
         }
 
-        .livros .livro {
-            scale: 1.1;
+        .livros {
+            justify-content: center;
+            .livro {
+                scale: 1.1;
+            }
         }
     }
 }
 
 @media (max-width: 393px) {
     .containerLivros {
-        justify-content: center;
+        justify-content: baseline;
 
         h2 {
             font-size: 30px;
