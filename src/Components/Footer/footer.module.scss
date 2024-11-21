@@ -31,6 +31,21 @@ footer {
 }
 
 //   Media Query Footer
+@media (max-width: 480px) {
+    footer {
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .telefoneContato {
+            margin: 0 auto;
+        }
+
+        .redesSociais {
+            margin: 0 auto;
+        }
+    }
+}
+
 @media (max-width: 432px) {
     footer {
         flex-direction: column;

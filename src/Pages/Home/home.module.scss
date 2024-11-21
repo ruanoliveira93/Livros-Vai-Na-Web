@@ -3,9 +3,12 @@
 main {
     display: block;
     width: 100%;
-    height: 200vh;
+    min-height: 200vh;
 
     .secaoHome {
+        position: relative;
+        height: 100vh;
+
         img {
             width: 100%;
             height: 100vh;
@@ -13,12 +16,12 @@ main {
         }
 
         h2 {
-            position: absolute;
             width: 30%;
             color: white;
             top: 50%;
             left: 4%;
             font-size: 48px;
+            position: absolute;
         }
     }
 
@@ -27,26 +30,22 @@ main {
         justify-content: space-evenly;
         align-items: start;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         flex-direction: column;
 
         h2 {
             color: #005695;
             font-size: 40px;
             font-weight: 500;
-            left: 4%;
-            position: absolute;
-            top: 130%;
             font-family: 'Inter', sans-serif;
+            padding-left: 80px;
         }
 
         .destaque {
-            display: grid;
-            gap: 160px;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            position: absolute;
-            top: 150%;
-            left: 4%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
             flex-wrap: wrap;
 
             div {
@@ -76,38 +75,52 @@ main {
 }
 
 // Media Query Home
-@media (max-width: 1834px) and (min-width: 1080px) {
-    main .secaoHome {
-        h2 {
-            width: 600px;
-            scale: 0.8;
-            left: 1%;
-            top: 45%;
-        }
+@media (max-width: 1834px) {
+    main {
+        min-height: 190vh;
 
-        img {
+        .secaoHome {
             height: 90vh;
+
+            h2 {
+                width: 600px;
+                scale: 0.8;
+                left: 1%;
+                top: 45%;
+            }
+
+            img {
+                height: 90vh;
+            }
         }
     }
 }
 
-@media (max-width: 1079px) and (min-width: 789px) {
-    main .secaoHome {
-        h2 {
-            top: 40%;
-            scale: 0.8;
-            width: 600px;
-            left: 2%;
-        }
+@media (max-width: 1079px) {
+    main {
+        min-height: 180vh;
 
-        img {
+        .secaoHome {
             height: 80vh;
+
+            h2 {
+                top: 40%;
+                scale: 0.8;
+                width: 600px;
+                left: 2%;
+            }
+
+            img {
+                height: 80vh;
+            }
         }
     }
 }
 
-@media (max-width: 789px) and (min-width: 528px) {
+@media (max-width: 789px) {
     main .secaoHome {
+        height: 60vh;
+
         h2 {
             top: 35%;
             scale: 0.7;
@@ -123,6 +136,8 @@ main {
 
 @media (max-width: 527px) {
     main .secaoHome {
+        height: 35vh;
+
         h2 {
             scale: 0.5;
             width: 500px;
@@ -138,10 +153,12 @@ main {
 
 @media (max-width: 393px) {
     main .secaoHome {
+        height: 30vh;
+
         h2 {
             scale: 0.4;
             width: 500px;
-            top: 22%;
+            top: 15%;
             left: -30%;
         }
 
@@ -151,110 +168,86 @@ main {
     }
 }
 
-@media (max-width: 1835px) {
+@media (max-width: 1559px) and (min-width: 1284px) {
     main {
-        height: 210vh;
-
         .insentivoEducacao {
             h2 {
-                top: 110%;
-            }
-
-            .destaque {
-                top: 120%;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                row-gap: 160px;
-                column-gap: 230px;
+                padding-left: 40px;
             }
         }
     }
 }
 
-@media (max-width: 1335px) {
+@media (max-width: 1283px) and (min-width: 964px) {
     main {
-        height: 210vh;
-
         .insentivoEducacao {
+            justify-content: end;
             h2 {
-                top: 110%;
+                padding-left: 50px;
             }
-            
+
             .destaque {
-                top: 125%;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                row-gap: 80px;
+                height: 80vh;
             }
         }
     }
 }
 
-@media (max-width: 835px) {
+@media (max-width: 963px) and (min-width: 809px) {
     main {
-        height: 180vh;
-
         .insentivoEducacao {
-            h2 {
-                top: 100%;
-                left: 30%;
-            }
 
             .destaque {
-                top: 100%;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                row-gap: 200px;
-                left: 0%;
-                scale: 0.8;
+                height: 80vh;
             }
         }
     }
 }
 
-@media (max-width: 735px) {
+@media (max-width: 808px) and (min-width: 790px) {
     main {
-        height: 180vh;
-
         .insentivoEducacao {
-            height: 163vh;
+            justify-content: space-evenly;
+            padding-top: 40px;
 
             h2 {
-                top: 85%;
-                left: 30%;
+                padding-left: 40px;
             }
 
             .destaque {
-                top: 95%;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                row-gap: 200px;
-                left: -4%;
-                scale: 0.8;
+                height: 80vh;
             }
         }
     }
 }
 
-@media (max-width: 693px) {
+@media (max-width: 789px) and (min-width: 644px) {
     main {
-        height: 240vh;
-
+        min-height: 160vh;
         .insentivoEducacao {
-            height: 163vh;
-
             h2 {
-                top: 60%;
-                left: 15%;
+                padding-left: 40px;
             }
 
             .destaque {
-                top: 65%;
-                display: grid;
-                grid-template-columns: 1fr;
-                row-gap: 100px;
-                left: 16%;
-                scale: 0.9;
+                height: 80vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 643px) and (min-width: 481px) {
+    main {
+        .insentivoEducacao {
+            min-height: 170vh;
+            justify-content: center;
+            h2 {
+                padding: 0;
+                margin: 0 auto;
+            }
+
+            .destaque {
+                height: 160vh;
             }
         }
     }
@@ -262,49 +255,39 @@ main {
 
 @media (max-width: 480px) {
     main {
-        height: 240vh;
-
         .insentivoEducacao {
-            height: 163vh;
+            padding-top: 30px;
 
             h2 {
-                top: 58%;
-                left: 22%;
-                font-size: 33px;
+                font-size: 32px;
+                padding: 0;
+                margin: 0 auto;
             }
 
             .destaque {
-                top: 60%;
-                display: grid;
-                grid-template-columns: 1fr;
-                row-gap: 100px;
-                left: 18%;
-                scale: 0.9;
+                div {
+                    scale: 0.8;
+                }
             }
         }
     }
 }
 
-@media (max-width: 432px) {
+@media (max-width: 432px) and (min-width: 406px) {
     main {
-        height: 230vh;
-
         .insentivoEducacao {
-            height: 163vh;
+            padding-top: 25px;
 
             h2 {
-                top: 60%;
-                left: 18%;
-                font-size: 33px;
+                font-size: 30px;
+                padding: 0;
+                margin: 0 auto;
             }
 
             .destaque {
-                top: 65%;
-                display: grid;
-                grid-template-columns: 1fr;
-                row-gap: 100px;
-                left: 14%;
-                scale: 0.9;
+                div {
+                    scale: 0.8;
+                }
             }
         }
     }
@@ -312,24 +295,19 @@ main {
 
 @media (max-width: 405px) {
     main {
-        height: 280vh;
-
         .insentivoEducacao {
-            min-height: 163vh;
+            padding-top: 40px;
 
             h2 {
-                top: 60%;
-                left: 20%;
                 font-size: 28px;
+                padding: 0;
+                margin: 0 auto;
             }
 
             .destaque {
-                top: 50%;
-                display: grid;
-                grid-template-columns: 1fr;
-                row-gap: 100px;
-                left: 10%;
-                scale: 0.8;
+                div {
+                    scale: 0.7;
+                }
             }
         }
     }

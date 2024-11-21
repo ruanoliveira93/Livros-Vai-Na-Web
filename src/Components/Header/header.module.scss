@@ -19,7 +19,7 @@ header {
       text-shadow: white 1px 1px 3px;
       animation: textGradient 5s ease forwards;
     }
-    
+
     img {
       width: 58px;
       margin-bottom: 20px;
@@ -32,7 +32,7 @@ header {
     align-items: center;
     width: 50vw;
     height: 3rem;
-    
+
     li {
       &:hover {
         text-shadow: white 1px 1px 3px;
@@ -108,24 +108,26 @@ header {
 
 @media (max-width: 790px) {
   header {
+    justify-content: space-evenly;
     flex-direction: column;
-    height: 15vh;
+    height: 150px;
     padding: 15px 0;
-    
+
     .navbar ul {
-      width: 40vh;
+      width: 100%;
+      gap: 80px;
     }
   }
 
 }
 
-@media (max-width: 393px) and (min-width: 340px) {
+@media (max-width: 440px) and (min-width: 393px) {
   header {
-    height: 21vh;
+    height: 150px;
 
     .navbar ul {
-      scale: 0.9;
-      width: 50vh;
+      width: 100%;
+      gap: 60px;
 
       li a {
         font-size: 16px;
