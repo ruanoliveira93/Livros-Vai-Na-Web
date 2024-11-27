@@ -7,7 +7,7 @@ export default function queroDoar() {
             <p>Por favor, preencha o formulário com suas informações e as informações do Livro</p>
             <section className={s.formulario}>
                 <div>
-                    <img src={frameLivro} alt="" />
+                    <img src={frameLivro} alt="Imagem ilustrativa de um livro" />
                     <legend>
                         Informações do Livro
                     </legend>

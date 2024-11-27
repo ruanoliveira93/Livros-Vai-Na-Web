@@ -1,62 +1,107 @@
-footer {
+.containerFooter {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     background-color: #005695;
     width: 100%;
-    height: 120px;
+    height: 188px;
 
-    .telefoneContato {
-      margin-left: 50px;
+    .contatos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 120px;
 
-      p {
-        font-size: 22px;
-        font-weight: 500px;
-        color: white;
-      }
+        .telefoneContato {
+            margin-left: 50px;
+
+            p {
+                font-size: 22px;
+                font-weight: 500px;
+                color: white;
+            }
+        }
+
+        .redesSociais {
+            margin-right: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            a i {
+                font-size: 35px;
+                color: white;
+            }
+        }
     }
 
-    .redesSociais {
-        margin-right: 50px;
+    .direitosReservados {
+        width: 100%;
+        height: 68px;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        background-color: black;
 
-        a i {
-            font-size: 35px;
+        p {
             color: white;
-          }
-      }
+            font-size: 15px;
+            font-weight: 700;
+        }
+    }
 }
 
 //   Media Query Footer
 @media (max-width: 480px) {
-    footer {
+    .containerFooter {
         flex-direction: column;
         justify-content: space-evenly;
 
-        .telefoneContato {
-            margin: 0 auto;
+        .contatos {
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+
+            .telefoneContato {
+                margin: 0 auto;
+            }
+    
+            .redesSociais {
+                margin: 0 auto;
+            }
         }
 
-        .redesSociais {
-            margin: 0 auto;
-        }
     }
 }
 
 @media (max-width: 432px) {
-    footer {
+    .containerFooter {
         flex-direction: column;
         justify-content: space-evenly;
-        
-        .telefoneContato {
-            margin: 0 auto;
+
+        .contatos {
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            
+            .telefoneContato {
+                margin: 0 auto;
+            }
+    
+            .redesSociais {
+                margin: 0 auto;
+            }
         }
-        
-        .redesSociais {
-            margin: 0 auto;
+
+        .direitosReservados {
+
+            p {
+                text-align: center;
+                width: 65%;
+            }
         }
     }
 }

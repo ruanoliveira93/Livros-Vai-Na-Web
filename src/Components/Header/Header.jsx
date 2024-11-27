@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import Home from '../../Pages/Home/Home'
+import Inicio from '../../Pages/Inicio/Inicio'
 import LivrosDoados from '../../Pages/LivrosDoados/LivrosDoados'
 import QueroDoar from '../../Pages/QueroDoar/QueroDoar'
 import logoLivro from '../../assets/Logo Livro.png'
@@ -28,17 +28,17 @@ export default function Header() {
 
                 <section className={s.formSearch}>
                     <input type="search" placeholder='O que você procura?' />
-                    
+
                     <button>
-                    <img src={lupaPesquisa} alt="Imagem Lupa" />
+                        <img src={lupaPesquisa} alt="Imagem Lupa" />
                     </button>
                 </section>
             </header>
 
             <Routes>
-                <Route index element={<Home/>}/>
-                <Route path='/livrosdoados' element={<LivrosDoados/>} />
-                <Route path='/querodoar' element={<QueroDoar/>}/>
+                <Route index element={<Inicio />} />
+                <Route path='/livrosdoados' element={<LivrosDoados />} />
+                <Route path='/querodoar' element={<QueroDoar />} />
             </Routes>
         </BrowserRouter>
     )

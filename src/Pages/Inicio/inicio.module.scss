@@ -5,7 +5,7 @@ main {
     width: 100%;
     min-height: 200vh;
 
-    .secaoHome {
+    .secaoInicio {
         position: relative;
         height: 100vh;
 
@@ -79,7 +79,7 @@ main {
     main {
         min-height: 190vh;
 
-        .secaoHome {
+        .secaoInicio {
             height: 90vh;
 
             h2 {
@@ -100,7 +100,7 @@ main {
     main {
         min-height: 180vh;
 
-        .secaoHome {
+        .secaoInicio {
             height: 80vh;
 
             h2 {
@@ -118,7 +118,7 @@ main {
 }
 
 @media (max-width: 789px) {
-    main .secaoHome {
+    main .secaoInicio {
         height: 60vh;
 
         h2 {
@@ -135,7 +135,7 @@ main {
 }
 
 @media (max-width: 527px) {
-    main .secaoHome {
+    main .secaoInicio {
         height: 35vh;
 
         h2 {
@@ -152,7 +152,7 @@ main {
 }
 
 @media (max-width: 393px) {
-    main .secaoHome {
+    main .secaoInicio {
         height: 30vh;
 
         h2 {
@@ -182,6 +182,7 @@ main {
     main {
         .insentivoEducacao {
             justify-content: end;
+
             h2 {
                 padding-left: 50px;
             }
@@ -224,6 +225,7 @@ main {
 @media (max-width: 789px) and (min-width: 644px) {
     main {
         min-height: 160vh;
+
         .insentivoEducacao {
             h2 {
                 padding-left: 40px;
@@ -241,6 +243,7 @@ main {
         .insentivoEducacao {
             min-height: 170vh;
             justify-content: center;
+
             h2 {
                 padding: 0;
                 margin: 0 auto;
