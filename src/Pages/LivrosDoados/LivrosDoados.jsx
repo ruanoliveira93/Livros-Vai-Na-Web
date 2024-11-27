@@ -3,7 +3,7 @@ import s from './livrosdoados.module.scss'
 
 export default function livrosDoados() {
     return (
-        <main className={s.containerLivros}>
+        <section className={s.containerLivros}>
             <h2>Livros Doados</h2>
 
             <section className={s.livros}>
@@ -16,6 +16,6 @@ export default function livrosDoados() {
                     </div>
                 </div>
             </section>
-        </main>
+        </section>
     )
 }

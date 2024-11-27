@@ -24,16 +24,19 @@
             }
         }
 
-        .redesSociais {
+        .navbar_redesSociais {
             margin-right: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
 
-            a i {
-                font-size: 35px;
-                color: white;
+            .navbar_lista {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                li a i {
+                    font-size: 35px;
+                    color: white;
+                }
             }
         }
     }
@@ -68,8 +71,8 @@
             .telefoneContato {
                 margin: 0 auto;
             }
-    
-            .redesSociais {
+
+            .navbar_redesSociais {
                 margin: 0 auto;
             }
         }
@@ -86,12 +89,12 @@
             flex-direction: column;
             justify-content: center;
             gap: 10px;
-            
+
             .telefoneContato {
                 margin: 0 auto;
             }
-    
-            .redesSociais {
+
+            .navbar_redesSociais {
                 margin: 0 auto;
             }
         }

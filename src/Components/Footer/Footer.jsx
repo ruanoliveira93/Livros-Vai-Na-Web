@@ -10,23 +10,40 @@ export default function Footer() {
                         <p>4002-8922</p>
                     </section>
 
-                    <section className={s.redesSociais}>
-                        <Link to='http://www.facebook.com' target='_blank'>
-                            <i className="fa-brands fa-facebook"></i>
-                        </Link>
-                        <Link to='http://www.x.com' target='_blank'>
-                            <i className="fa-brands fa-twitter"></i>
-                        </Link>
-                        <Link to='http://www.youtube.com' target='_blank'>
-                            <i className="fa-brands fa-youtube"></i>
-                        </Link>
-                        <Link to='http://www.linkedin.com' target='_blank'>
-                            <i className="fa-brands fa-linkedin"></i>
-                        </Link>
-                        <Link to='http://www.instagram.com' target='_blank'>
-                            <i className="fa-brands fa-instagram"></i>
-                        </Link>
-                    </section>
+                    <nav className={s.navbar_redesSociais}>
+                        <ul className={s.navbar_lista}>
+                            <li>
+                                <Link to='http://www.facebook.com' target='_blank'>
+                                    <i className="fa-brands fa-facebook"></i>
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to='http://www.x.com' target='_blank'>
+                                    <i className="fa-brands fa-twitter"></i>
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to='http://www.youtube.com' target='_blank'>
+                                    <i className="fa-brands fa-youtube"></i>
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to='http://www.linkedin.com' target='_blank'>
+                                    <i className="fa-brands fa-linkedin"></i>
+                                </Link>
+                            </li>
+
+                            <li>
+                                <Link to='http://www.instagram.com' target='_blank'>
+                                    <i className="fa-brands fa-instagram"></i>
+                                </Link>
+                            </li>
+                        </ul>
+
+                    </nav>
                 </section>
 
                 <section className={s.direitosReservados}>
