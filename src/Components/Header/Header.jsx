@@ -26,13 +26,13 @@ export default function Header() {
                     </ul>
                 </nav>
 
-                <section className={s.formSearch}>
+                <form className={s.formSearch}>
                     <input type="search" placeholder='O que você procura?' />
 
                     <button>
                         <img src={lupaPesquisa} alt="Imagem Lupa" />
                     </button>
-                </section>
+                </form>
             </header>
 
             <Routes>

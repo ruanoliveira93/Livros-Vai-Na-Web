@@ -8,12 +8,10 @@ export default function queroDoar() {
             <section className={s.formulario}>
                 <div>
                     <img src={iconeLivro} alt="Imagem ilustrativa de um livro" />
-                    <legend>
-                        Informações do Livro
-                    </legend>
+                    <p>Informações do Livro</p>
                 </div>
 
-                <form action="">
+                <form>
                     <input type="text" name="titulo" id="titulo" placeholder="Título" />
                     <input type="text" name="categoria" id="categoria" placeholder="Categoria" />
                     <input type="text" name="autor" id="autor" placeholder="Autor" />
